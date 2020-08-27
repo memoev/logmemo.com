@@ -13,9 +13,9 @@ footer {
 }
 
 div.main {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
-    margin-top: 1.5em;
+    margin-top: 2em;
     position: relative;
 }
 
@@ -50,6 +50,6 @@ img.arrows {
     height: 30px;
 }
 
-img.darkmode {
+img.darkmode-img {
     width: 20px;
 }

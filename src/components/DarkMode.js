@@ -1,8 +1,9 @@
 import React from "react"
 
-import darkmode from '../../static/darkmode.png'
-import darkImage from '../../static/memologob.png'
-import clearImage from '../../static/memologo.png'
+import darkmode from '../../static/darkmode.png';
+import clearmode from '../../static/clearmode.png';
+import darkImage from '../../static/memologob.png';
+import clearImage from '../../static/memologo.png';
 
 
 class DarkMode extends React.Component {
@@ -16,13 +17,17 @@ class DarkMode extends React.Component {
       document.body.style.background = "#000";
       document.body.style.color = "#fff";
       document.querySelector('.logo').src = darkImage;
-      document.querySelector('.logo').style.borderColor = '#fff'
+      document.querySelector('.logo').style.borderColor = '#fff';
+      document.querySelector('.darkmode-img').src = clearmode;
+      document.querySelector('.darkmode').style.background = '#555555'
       this.setState({ dark: true });
     } else {
       document.body.style.background = "#fff";
       document.body.style.color = "#000";
       document.querySelector('.logo').src = clearImage;
-      document.querySelector('.logo').style.borderColor = '#000'
+      document.querySelector('.logo').style.borderColor = '#000';
+      document.querySelector('.darkmode-img').src = darkmode;
+      document.querySelector('.darkmode').style.background = '#f5f5f5'
       this.setState({ dark: false });
     };
   };
@@ -30,7 +35,7 @@ class DarkMode extends React.Component {
   render() {
     return (
       <button className="darkmode" onClick={this.toogleMode}>
-        <img className="darkmode" src={ darkmode } alt="darkmode"></img>
+        <img className="darkmode-img" src={ darkmode } alt="darkmode"></img>
       </button>
     )
   }
