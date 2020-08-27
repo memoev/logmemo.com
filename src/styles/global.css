@@ -6,3 +6,28 @@ footer {
     line-height: 60px;
     background-color: #f5f5f5;
 }
+
+span.header {
+    margin-left: 0.5em;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+img.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 6em;
+    border: 6px solid #000;
+    margin: auto;
+}
+
+img.arrows {
+    width: 30px;
+    height: 30px;
+}
+
+div.main {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
