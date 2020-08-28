@@ -9,8 +9,10 @@ export default function Ribbon() {
   return (
     <div className="main">
         <img className="arrows" src={ arrows } alt="arrows"></img>
-        <img className="logo" src={ memo } alt="logo"></img>
-        <span className="header">guillermo's journey into design & development</span>
+        <span className="hover">
+          <img className="logo" src={ memo } alt="logo"></img>
+          <span className="header">guillermo's journey into design & development</span>
+        </span>
         <DarkMode />
     </div>
   )
