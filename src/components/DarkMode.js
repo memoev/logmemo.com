@@ -4,6 +4,8 @@ import darkmode from '../../static/darkmode.png';
 import clearmode from '../../static/clearmode.png';
 import darkImage from '../../static/memologob.png';
 import clearImage from '../../static/memologo.png';
+import blackArrows from '../../static/arrows.png';
+import whiteArrows from '../../static/arrowsb.png';
 
 
 class DarkMode extends React.Component {
@@ -14,12 +16,14 @@ class DarkMode extends React.Component {
 
   toogleMode = _ => {
     if (!this.state.dark) {
-      document.body.style.background = "#000";
+      document.body.style.background = "#131415";
       document.body.style.color = "#fff";
       document.querySelector('.logo').src = darkImage;
       document.querySelector('.logo').style.borderColor = '#fff';
       document.querySelector('.darkmode-img').src = clearmode;
-      document.querySelector('.darkmode').style.background = '#555555'
+      document.querySelector('.darkmode').style.background = '#0f0e0e'
+      document.querySelector('.arrows').src = whiteArrows;
+      document.querySelector('nav').style.background = '#0f0e0e';
       this.setState({ dark: true });
     } else {
       document.body.style.background = "#fff";
@@ -28,6 +32,8 @@ class DarkMode extends React.Component {
       document.querySelector('.logo').style.borderColor = '#000';
       document.querySelector('.darkmode-img').src = darkmode;
       document.querySelector('.darkmode').style.background = '#f5f5f5'
+      document.querySelector('.arrows').src = blackArrows;
+      document.querySelector('nav').style.background = '#f5f5f5';
       this.setState({ dark: false });
     };
   };
