@@ -23,7 +23,6 @@ class DarkMode extends React.Component {
       document.querySelector('.darkmode-img').src = clearmode;
       document.querySelector('.darkmode').style.background = '#0f0e0e'
       document.querySelector('.arrows').src = whiteArrows;
-      document.querySelector('nav').style.background = '#0f0e0e';
       this.setState({ dark: true });
     } else {
       document.body.style.background = "#fff";
@@ -33,7 +32,6 @@ class DarkMode extends React.Component {
       document.querySelector('.darkmode-img').src = darkmode;
       document.querySelector('.darkmode').style.background = '#f5f5f5'
       document.querySelector('.arrows').src = blackArrows;
-      document.querySelector('nav').style.background = '#f5f5f5';
       this.setState({ dark: false });
     };
   };
