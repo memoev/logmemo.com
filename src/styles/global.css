@@ -28,6 +28,10 @@ a {
     color: #00db8b;
 }
 
+a.nav-links {
+    margin: 10px;
+}
+
 a:hover {
     color: #00db8b;
 }
