@@ -16,6 +16,11 @@ nav {
     width: 100%;
 }
 
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
 footer {
     text-align: center;
     width: 100%;
@@ -29,6 +34,11 @@ pre {
     color: #f5f5f5;
     padding: 1em;
     border-radius: 2em;
+}
+
+hr {
+    border: 1px solid #e3e4e6;
+    width: 60%;
 }
 
 a {
@@ -62,17 +72,22 @@ div.center {
     height: auto;
     position: relative;
 }
+
 div.blog-post-container {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
 div.posts {
     text-align: left;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+div.input {
+    text-align: center;
 }
 
 button.darkmode {

@@ -1,7 +1,7 @@
 ---
 slug: "/blog/2020-08-02-async-await"
 date: "2020-08"
-title: "Async/Await"
+title: "Promises, Async & Await"
 ---
 
 # INDEX 

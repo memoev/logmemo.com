@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Ribbon from "../components/Ribbon"
 import Button from "../components/Button"
+import SubForm from "../components/SubForm"
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <div style={{textAlign: "center"}}>
         <Button to="/blog">Browse Articles</Button>
       </div>
+      <SubForm />
       <Footer />
     </>
   )
