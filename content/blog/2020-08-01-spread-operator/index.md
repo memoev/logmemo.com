@@ -4,15 +4,6 @@ date: "2020-08"
 title: "The Spread Operator"
 ---
 
-## INDEX
-
-1. Intro to spread operator
-2. Example
-3. Spread Operators for Arrays
-4. Spread Operators for Objects
-5. Conclusion - Spread Syntax Enables Compact and Expressive Code
-6. Resources
-
 ### 1. Intro to spread operator
 
 ### 2. Example

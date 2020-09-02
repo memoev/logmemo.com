@@ -4,11 +4,6 @@ date: "2020-08"
 title: "Promises, Async & Await"
 ---
 
-# INDEX 
-1. Promises
-2. Chaining (Promise Chaining)
-3. Async/Await
-
 ### 1. PROMISES
 
 - [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
