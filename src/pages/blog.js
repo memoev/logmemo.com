@@ -1,9 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import Ribbon from "../components/Ribbon";
 import Button from "../components/Button";
 import SubForm from "../components/SubForm";
 
@@ -11,8 +8,6 @@ export default function Home({ data }) {
   const posts = data.allMarkdownRemark.edges;
   return (
     <>
-      <NavBar />
-      <Ribbon />
       <div style={{textAlign: "center"}}>
         {posts.map((post, index) => (
           <div key={index} className="posts">
@@ -21,10 +16,9 @@ export default function Home({ data }) {
             <Button to={post.node.frontmatter.slug}>Read More</Button>
           </div>
         ))}
-        <Button to="/">Go Back</Button>
+        <Button className="last-button" to="/">Go Back</Button>
       </div>
       <SubForm />
-      <Footer />
     </>
   )
 }
