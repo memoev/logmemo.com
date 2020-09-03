@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 
-export default function Footer({ to, children }) {
+export default function Button({ to, children }) {
     const styles = {
         display: 'inline-block',
         color: '#00897b',
