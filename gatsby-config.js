@@ -57,5 +57,17 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Guillermo Villalta`,
+        short_name: `memoev`,
+        description: `Guillermo's development space`,
+        lang: `en`,
+        display: `standalone`,
+        icon: `static/memologob.png`,
+        start_url: `/`,
+      },
+    },
   ],
 }
