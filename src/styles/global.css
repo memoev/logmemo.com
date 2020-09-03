@@ -17,7 +17,7 @@ nav {
 }
 
 form {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@ pre {
 
 hr {
     border: 1px solid #e3e4e6;
-    width: 60%;
+    width: 50%;
 }
 
 a {
@@ -54,14 +54,14 @@ a:hover {
 }
 
 div.main {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 2em;
     position: relative;
 }
 
 div.me {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 4em;
 }
@@ -74,13 +74,13 @@ div.center {
 }
 
 div.blog-post-container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
 div.posts {
     text-align: left;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 2em;
     margin-bottom: 2em;
