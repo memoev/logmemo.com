@@ -108,12 +108,20 @@ span.header {
 }
 
 @media screen and (max-width: 900px) {
+    form, hr, div.main, div.me, div.posts, div.blog-post-container {
+        width: 70%;
+    }
+    
     span.header {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 600px) {
+    form, hr, div.main, div.me, div.posts, div.blog-post-container {
+        width: 90%;
+    }
+    
     span.header {
         display: none;
     }
