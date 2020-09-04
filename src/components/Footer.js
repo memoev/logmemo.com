@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer>
       <div className="center">
-        <img className='footer-img' src={ github } alt='github'></img>
-        <img className='footer-img' src={ twitter } alt='github'></img>
-        <img className='footer-img' src={ linkedin } alt='github'></img>
+        <a href="https://github.com/memoev"><img className='footer-img' src={ github } alt='github'></img></a>
+        <a href="https://twitter.com/memoevh"><img className='footer-img' src={ twitter } alt='github'></img></a>
+        <a href="https://www.linkedin.com/in/guillermovillalta/"><img className='footer-img' src={ linkedin } alt='github'></img></a>
       </div>
     </footer>
   )
