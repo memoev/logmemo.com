@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Guillermo Villalta",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
