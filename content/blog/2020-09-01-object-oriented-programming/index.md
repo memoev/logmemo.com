@@ -155,4 +155,4 @@ Being able to do all this, will provide a user friendly and more elegant way to 
 
 ### 4. SUMMARY
 
-Object-oriented programming allows us to model/design our data as units, providing the benefits of `Encapsulation`, which allows us to group related variables and functions together, reducing complexity and reusing code along different parts of the program. With `Abstraction`, we hide the details and complexity, showing only what's necessary, helping us to isolate the impact of changes. `Inheritance` helps us to eliminate redundant code and lastly, with`Polymorphism` we are able to avoid multiple case scenarios.
+Object-oriented programming allows us to model/design our data as units, providing the benefits of `Encapsulation`, which allows us to group related variables and functions together, reducing complexity and reusing code along different parts of the program. With `Abstraction`, we hide the details and complexity, showing only what's necessary, helping us to isolate the impact of changes. `Inheritance` helps us to eliminate redundant code and lastly, with `Polymorphism` we are able to avoid multiple case scenarios.
