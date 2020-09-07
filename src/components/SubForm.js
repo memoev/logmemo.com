@@ -8,7 +8,7 @@ export default function SubForm() {
         <input type="hidden" />
         <h3>Don't be a stranger!</h3>
         <p>
-          I'm all about new and old tech. Please reach out, I'm happy to chat, collaborate and learn.
+          I'm all about new and old tech, please reach out. I'm happy to chat, collaborate and learn.
         </p>
         <div className="input">
           <label>

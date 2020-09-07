@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className="me">
         <p>
-          <b>Hello!</b> <span role="img" aria-label="hand">🖖🏽</span> 
+          <b>Hello!</b> <span role="img" aria-label="hand">🖖</span> 
         </p>
         <p>
           My name is Guillermo and I'm a software developer trying to share and document my journey throughout web development. This is a space where I'll be dropping notes, thoughts and articles about anything that revolves around technology and programming that I find relevant.
