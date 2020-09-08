@@ -4,7 +4,7 @@ export default function SubForm() {
   return (
     <>
       <hr />
-      <form name="contact">
+      <form name="reach" method="POST" data-netlify="true">
         <input type="hidden" />
         <h3>Don't be a stranger!</h3>
         <p>
