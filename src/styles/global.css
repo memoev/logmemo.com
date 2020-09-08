@@ -70,13 +70,13 @@ div.center {
 }
 
 div.blog-post-container {
-    width: 50%;
+    width: 800px;
     margin: 0 auto;
 }
 
 div.posts {
     text-align: left;
-    width: 50%;
+    width: 800px;
     margin: 0 auto;
     margin-top: 2em;
     margin-bottom: 2em;
