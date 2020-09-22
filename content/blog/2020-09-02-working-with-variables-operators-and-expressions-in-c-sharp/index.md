@@ -9,6 +9,7 @@ title: "Working with Variables, Operators, and Expressions in C#"
 - Variables
 - Primitive data types
 - Operators
+- Implicitly Typed Local Variables
 
 ## Understanding statements, identifiers and keywords
 ### Statements
@@ -61,6 +62,52 @@ In the last example, we first declare what the date type of the variable, in thi
 Common types such as numeric, strings, character and boolean values, are collectively know as the `primitive data types`. 
 - [C# Primitive Data Types](https://condor.depaul.edu/sjost/nwdp/notes/cs1/CSDatatypes.htm).
 
-
-
 ## Operators
+
+### Arithmetic Operators
+C# supports the regular arithmetic operations we all learn throughout childhood. The symbols `+, -, *, /` are called operators because they "operate" on values creating new ones. It's important to clarify that not all operators apply to all data types. The arithmetic operators can't be used on, for example, `string` types or `booleans`. However, you can use the `+` operator to concatenate string values, for example:
+```c-sharp
+Console.WriteLine("43" + "1"); // This will output 431, not 44!
+```
+Soemthing to take into consideration is that the result of arithmetic operations depends on the type of the operands used. For example, the value of the expressions `5.0/2.5` is 2.5; the type of both operands is double, so the ttype of result is also double (Remember that in C#, literal numbbers with decimal points are always double, not float, to maintain as much accuracy as possible). Another trick in C# is the representation of `Infinity` just for float and double data types, which can be represented as 5.0/0.0. Also NaN (Not a Number), which cas appear by paradoxes such as 0.0/0.0.
+
+Another less-familiar arithmetic operator is the `remainder`, or `modulus`, operator, which is represented by the percent sign (%). The best way to describe its purpose is: the result of x % y is the integer remainder after dividing the integer value x by the integer value y.
+
+### Assignment Operator
+The equal sign (=) is the assignment operator. The operand on the right side is evaluated and then stored in the operand on the left side. The value of the assignment operator is the value that is assigned to the left of the operand.
+```c-sharp
+int myInteger;
+myInteger = 10; // value of assignment expression is 10.
+```
+
+### Precendence and Associativity
+In C#, the multiplicative operators `(/, *, and %)` have `precendence` over the additive operators `(+ and -)`, so in expressions such as 2 + 3 * 4, the multiplication is performed first, followed by the addition.
+```c-sharp
+2 + 3 * 4 // This will output 14, not 20.
+```
+But what happends when an expression contains different operators with the same precendence? `Associativity` comes into play, which determines if an expression is calculated from left to right or from right to left. Arithmetic operators are left associative and the assignment operator (=) is right associative.
+
+### Unary operators
+C# provides operators with the only task of adding or substracting 1 to a variable (++ and --). This operators are unary, which means that they take only one single operand. They share the same precendence and are both left associative. They are also unusual in that you can place them either before or after the variable:
+```c-sharp
+count++; // postfix increment
+++count; //prefix increment
+count--; // postfix decrement
+--count; // prefix decrement
+```
+The benefits of this is seen when evaluating operations. The value returned by count++ is the value of count before the increment takes place, whereas the value returned by ++count is the value of count after the increment takes place. For example:
+```c-sharp
+int x;
+x = 42;
+
+Console.WriteLine(x++); // Returns 42, not 43.
+Console.WriteLine(++x); // Returns 43.
+```
+
+## Implicitly Typed Local Variables
+Before ending this, I would like to introduce `Implicitly Typed Local Variables`, which are represented by using the `var` keyword when declaring/assigning a variable:
+```c-sharp
+var myVariable = 99; // Type of int number
+var myOtherVariable = "Hello"; // Type of string
+```
+By doing this you are asking the C# compiler to infer the type of a variable from an expression and use this type when declaring the variable. This causes myVariable to only be able to take int data types. you should also understand that you can only use the `var` keyword when programming full declarations, so it's purpose its just for convenience.
