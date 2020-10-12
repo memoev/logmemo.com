@@ -1,3 +1,9 @@
+---
+slug: "/blog/2020-10-01-writing-methods-in-c-sharp"
+date: "2020-10"
+title: "Writing Methods in C#"
+---
+
 # INDEX
 - Declaring methods and passing parameters
 - Returning information from a method
