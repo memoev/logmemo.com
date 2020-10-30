@@ -4,15 +4,15 @@ import { Link } from "gatsby"
 
 export default function Button({ to, children }) {
     const styles = {
-        display: 'inline-block',
-        fontSize: '14px',
-        color: '#00897b',
-        border: 'none',
-        background: '#00db8b',
-        borderRadius: '1em',
-        padding: '10px',
-        cursor: 'pointer',
-        margin: '10px',
+      display: 'inline-block',
+      fontSize: '14px',
+      color: '#00897b',
+      border: 'none',
+      background: '#00db8b',
+      borderRadius: '1em',
+      padding: '10px',
+      cursor: 'pointer',
+      margin: '10px',
     }
 
     return (

@@ -4,6 +4,15 @@ body{
     transition: 0.5s;
 }
 
+body.ligh-mode {
+    background-color: pink;
+}
+
+body.dark-mode {
+    background-color: #131415;
+    color: #fff;
+}
+
 p {
     font-size: 14px;
     line-height: 1.7;
