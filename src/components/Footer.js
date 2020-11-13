@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import github from '../../static/github.png'
 import twitter from '../../static/twitter.jpg'

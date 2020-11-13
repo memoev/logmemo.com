@@ -31,6 +31,18 @@ form {
     margin: 0 auto;
 }
 
+label {
+    margin: 0 30px;
+}
+
+div.label-name {
+    text-align: left !important;
+}
+
+input {
+    width: 100%;
+}
+
 footer {
     text-align: center;
     width: 100%;
@@ -91,7 +103,7 @@ div.posts {
     margin-bottom: 2em;
 }
 
-div.input {
+div.user-input {
     text-align: center;
 }
 
