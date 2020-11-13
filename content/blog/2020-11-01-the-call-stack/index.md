@@ -17,7 +17,7 @@ And just as there's two types of code, there's two types of execution contexts:
 
 Here's the significant difference: **There's only one global execution context, created when our JavaScript program starts executing, whereas a new function execution context is created on each function invocation**.
 
-Let's add that, there's a function context (`this`), which is the object on which our function is invoked, which can be accessed through the *this* keyword. An execution context, although it has a similiar name, is a completely different thing. It's an internal JavaScript concept that the JS Engine uses to track the execution of functions.
+Let's add to that, there's a function context (`this`), which is the object on which our function is invoked, which can be accessed through the *this* keyword. An execution context, although it has a similiar name, is a completely different thing. It's an internal JavaScript concept that the JS Engine uses to track the execution of functions.
 
 JavaScript is based on a single-threaded execution model: **Only one piece of code can be executed at a time**. Every time a function is invoked, the current execution context has to be stopped, and a new function execution context, in which the function code will be evaluated, has to be created. This is a lot of words just to say: whenever a new function is invoked a new function execution context gets prioritized and executed first, until it finishes. 
 
