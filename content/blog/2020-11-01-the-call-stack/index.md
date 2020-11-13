@@ -14,6 +14,7 @@ There are two main types of JavaScript code: `global code`, placed outside of al
 And just as there's two types of code, there's two types of execution contexts:
 - Global Execution Context
 - Function Execution Context
+
 Here's the significant difference: **There's only one global execution context, created when our JavaScript program starts executing, whereas a new function execution context is created on each function invocation**.
 
 Let's add that, there's a function context (`this`), which is the object on which our function is invoked, which can be accessed through the *this* keyword. An execution context, although it has a similiar name, is a completely different thing. It's an internal JavaScript concept that the JS Engine uses to track the execution of functions.
