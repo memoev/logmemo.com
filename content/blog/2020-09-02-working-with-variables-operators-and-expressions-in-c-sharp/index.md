@@ -15,7 +15,7 @@ title: "Working with Variables, Operators, and Expressions in C#"
 ### Statements
 A `statement` is a command that performs and action, such as calculating a value and storing a result or displaying a message to a user. You combine statements to create methods. Statements in C# follow a rules describing their format and construction, also known as `syntax`. Meanwhile, the specification of what a statement does is known as `semantics`. For example, in contrast with Javascript, which is a more permissive programming language, you don't have to worry so much about ending your statements with a semicolon (;), since the compiler adds them asumming you forgot to. But in C#, if there's a statement with out semicolon, you'll get a compiling error.
 
-```c-sharp
+```csharp
 Console.WriteLine("Hello, World!"); // C# syntax
 ```
 
@@ -25,7 +25,7 @@ Console.WriteLine("Hello, World!"); // C# syntax
 - Identifiers MUST start with a letter or underscore.
 Something to take into consideration is that C# is a case-sensitive language: `thisIdentifier` is different than `ThisIdentifier`.
 
-```c-sharp
+```csharp
 namespace TestHello
 {
     class Program
@@ -51,7 +51,7 @@ A `variable` is a storage location that holds a value, just like a box in the co
 - Avoid Hungarian notation.
 
 Variables can hold many different types of values, in C# you must specify the type of data it will store. You declare the type and name of a variable in declaration statements.
-```c-sharp
+```csharp
 int age;
 age = 21;
 ```
@@ -75,28 +75,28 @@ Another less-familiar arithmetic operator is the `remainder`, or `modulus`, oper
 
 ### Assignment Operator
 The equal sign (=) is the assignment operator. The operand on the right side is evaluated and then stored in the operand on the left side. The value of the assignment operator is the value that is assigned to the left of the operand.
-```c-sharp
+```csharp
 int myInteger;
 myInteger = 10; // value of assignment expression is 10.
 ```
 
 ### Precendence and Associativity
 In C#, the multiplicative operators `(/, *, and %)` have `precendence` over the additive operators `(+ and -)`, so in expressions such as 2 + 3 * 4, the multiplication is performed first, followed by the addition.
-```c-sharp
+```csharp
 2 + 3 * 4 // This will output 14, not 20.
 ```
 But what happends when an expression contains different operators with the same precendence? `Associativity` comes into play, which determines if an expression is calculated from left to right or from right to left. Arithmetic operators are left associative and the assignment operator (=) is right associative.
 
 ### Unary operators
 C# provides operators with the only task of adding or substracting 1 to a variable (++ and --). This operators are unary, which means that they take only one single operand. They share the same precendence and are both left associative. They are also unusual in that you can place them either before or after the variable:
-```c-sharp
+```csharp
 count++; // postfix increment
 ++count; //prefix increment
 count--; // postfix decrement
 --count; // prefix decrement
 ```
 The benefits of this is seen when evaluating operations. The value returned by count++ is the value of count before the increment takes place, whereas the value returned by ++count is the value of count after the increment takes place. For example:
-```c-sharp
+```csharp
 int x;
 x = 42;
 
@@ -106,7 +106,7 @@ Console.WriteLine(++x); // Returns 43.
 
 ## Implicitly Typed Local Variables
 Before ending this, I would like to introduce `Implicitly Typed Local Variables`, which are represented by using the `var` keyword when declaring/assigning a variable:
-```c-sharp
+```csharp
 var myVariable = 99; // Type of int number
 var myOtherVariable = "Hello"; // Type of string
 ```
