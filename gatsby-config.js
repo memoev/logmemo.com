@@ -63,12 +63,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Guillermo Villalta`,
+        name: "Guillermo's development space",
         short_name: `memoev`,
-        description: `Guillermo's development space`,
+        description: "Articles and notes from Guillermo's personal stash",
         lang: `en`,
         display: `standalone`,
-        icon: `static/memologob.png`,
+        icon: `static/rosepen.png`,
         start_url: `/`,
       },
     },
