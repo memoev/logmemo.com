@@ -7,8 +7,8 @@ title: "The Call Stack"
 ## The Call Stack
 There are two main types of JavaScript code: `global code`, placed outside of all functions, and `functional code`, contained within functions. When code is being executed by the JavaScript Engine, each statement is executed in a certain `execution context`.
 
-[Javascript Visualized: The Javascript Engine](https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf)
-[History on the Javascript Engine](https://en.wikipedia.org/wiki/JavaScript_engine)
+- [Javascript Visualized: The Javascript Engine](https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf)
+- [History on the Javascript Engine](https://en.wikipedia.org/wiki/JavaScript_engine)
 
 ### Execution Context
 And just as there's two types of code, there's two types of execution contexts:
