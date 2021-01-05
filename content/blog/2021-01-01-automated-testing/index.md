@@ -4,8 +4,6 @@ date: "2021-01"
 title: "Automated testing"
 ---
 
-#  Automated testing
-
 We're starting by defining what automated testing is. Automated testing is the practice of writing code to test your code, and then run those tests in an automated fashion. Test automation can automate some repetitive but necessary tasks in a formalized testing process already in place, or perform additional testing that would be difficult to do manually.
 
 ### Benefits of AT (Automated Testing)
