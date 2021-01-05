@@ -24,4 +24,4 @@ Integration testing does test code including `external dependencies`, such as fi
 This basically drives an application through its UI. There's specific tools used to created E2E tests, such as [Selenium](https://www.selenium.dev/) and [Cypress](https://www.cypress.io/) among the most popular ones. Some of them allow us to record the interaction of a user with our application and check if the app is returning the right results or not. They have a few problems, they are usually REALLY slow. Another problem is that they are really brittle (breaks easily).
 
 We should write all and any single one the applications we just detailed above, in order to ensure proper functionality of our applications, for this we can follow the test pyramid convention:
-![Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid/teaser.png)
+![Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid/title.png)
