@@ -62,10 +62,10 @@ using NUnit.Framework;
 
 namespace Table.UnitTests
 {
-    [TestFixture]
+    [TestClass]
     public class ReservationTests
     {
-        [Test]
+        [TestMethod]
         public void CanBeCancelledBy_AdminCancelling__ReturnsTrue()
         {
             // Arrange
@@ -73,10 +73,10 @@ namespace Table.UnitTests
             // Act
             var result = reservation.CanBeCancelledBy(new User { IsAdmin = true });
             // Assert
-            Assert.That(result == true);
+            Assert.IsTrue(result);
         }
 
-        [Test]
+        [TestMethod]
         public void CanBeCancelledBy_CameUserCancelling_ReturnsTrue()
         {
         	// Arrange
@@ -85,10 +85,10 @@ namespace Table.UnitTests
             // Act
             var result = reservation.CanBeCancelledBy(user);
             // Assert
-            Assert.That(result == true);
+            Assert.IsTrue(result);
         }
 
-        [Test]
+        [TestMethod]
         public void CanBeCancelledBy_AnotherUserCancelling_ReturnsFalse()
         {
         	// Arrange
@@ -96,7 +96,7 @@ namespace Table.UnitTests
             // Act
             var result = reservation.CanBeCancelledBy(new User());
             // Assert
-            Assert.That(result == false);
+            Assert.IsTrue(result);
         }
     }
 }
@@ -111,3 +111,13 @@ Inside of every test methods, we have three parts:
 - Assert: In this part we verify that the result of the act part is correct. There's helper classes that frameworks provide to check this. In the example above we are using `Assert`.
 
 To run the test, we need to follow the process provided by our prefered IDE. If you're using VS 2019, there's options you can select if you navigate to the `Test` button at the top of the solution, were you can either select `Run All Tests`, `Debug All Tests`, `Repeat Last Run`, etc; or even configure your testing environment. This will activate the `Test Explorer` window to either the left or right of your VS 2019. On a real case application, this window will be populated with all the tests you have written for the given solution.
+
+### NUnit
+[NUnit](https://nunit.org/) is not built in to Visual Studio 2019, so you will need to install a couple of packages to get it ready to run.
+
+There's a couple of things that change when using `NUnit`, and that's property names and Assertions. You would need to switch `[TestClass]` to `[TestFixture]`, `[TestMethod]` to `[Test]` and `Assert.IsTrue(result)` to `Assert.That(result == true)`.
+
+## TDD (Test Driven Development)
+When talking about AT, a combnination of words that you start to hear often is `Test Driven Development`, also called `Test First`, which is an approch of writting test code before writting the application or production code. The way to do this is by writting a failing test, then you would write the simplest code to make the test pass (SIMPLE KISS), then refactor your code if necessary. These 3 steps are the foundation of TDD.
+
+The benfits of this is that your code will be tesable from the get go, then any line of your production code is full covered by test, and lastly, you will achive a simpler imprementation. You will need specific and well written requirements. The name comes from development being driven by test. TDD can be more promesing because of the benefits, but in some cases this could make things a bit more complicated. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free.
