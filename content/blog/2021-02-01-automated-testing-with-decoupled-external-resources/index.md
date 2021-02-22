@@ -1,6 +1,6 @@
 ---
-slug: "/blog/2021-02-04-automated-testing-with-decoupled-external-resources"
-date: "2021-01"
+slug: "/blog/2021-02-01-automated-testing-with-decoupled-external-resources"
+date: "2021-02"
 title: "Automated testing with Decoupled External Resources"
 ---
 
