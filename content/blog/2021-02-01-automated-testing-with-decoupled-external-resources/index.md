@@ -6,11 +6,11 @@ title: "Automated testing with Decoupled External Resources"
 
 ## Loosely-coupled Design (Dependency Injection)
 In `Loosely-coupled design` you can replace one object with another at run-time. When you are testing a Class that talks to an external resource, you can replace that object with a fake object, we call that a `test double`. There's three steps you need to follow:
-- Extract the code that uses an external resource into a separate class and isolate it from the rest of your code.
-- Extract an `Interface` from that class. An interface is like a contract, it simple declares a bunch of methods and properties, but none of these have an implementation, none of the methods have code. An interface simply tells the C# compiler that somewhere there are *probably* one or more classes that implement the members declared in the interface. You could have two different classes that implement that interface:
+* Extract the code that uses an external resource into a separate class and isolate it from the rest of your code.
+* Extract an `Interface` from that class. An interface is like a contract, it simple declares a bunch of methods and properties, but none of these have an implementation, none of the methods have code. An interface simply tells the C# compiler that somewhere there are *probably* one or more classes that implement the members declared in the interface. You could have two different classes that implement that interface:
     - One can be the real implementation that uses an external resource.
     - Another one that can be the fake one which we call the test double.
-- We modify the class under the test to talk to the "fake" interface instead of one of the concrete implementations. So instead of being dependent on a specific implementation, it will be dependent only on the interface or the contract.
+* We modify the class under the test to talk to the "fake" interface instead of one of the concrete implementations. So instead of being dependent on a specific implementation, it will be dependent only on the interface or the contract.
 Following the 3 steps above, our class becomes loosely-coupled and testable.
 
 It could look something like this and is an example as well of `DEPENDENCY INJECTION`:
