@@ -152,21 +152,13 @@ span.header {
 }
 
 img.logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 6em;
-    border: 6px solid #000;
+    width: 200px;
+    height: 200px;
     margin: auto;
-    transition: 0.5s;
-    background-color: #fff;
 }
 
 .hover:hover span.header {
     color: #00db8b !important;
-}
-
-.hover:hover img.logo {
-    border: 6px solid #00db8b !important;  
 }
 
 img.arrows {
