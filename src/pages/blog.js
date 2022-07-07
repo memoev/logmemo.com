@@ -25,7 +25,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {frontmatter: {slug: {ne: "/home"}}}) {
       edges {
         node {
           internal {
